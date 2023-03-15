@@ -69,6 +69,7 @@ namespace MyNamespace
                 await dbContext.Hotels.AddRangeAsync(hotels);
                 await dbContext.Restaurants.AddRangeAsync(restaurants);
             }
+            await dbContext.SaveChangesAsync();
         }
     }
 }
